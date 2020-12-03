@@ -1,4 +1,4 @@
-directions = [x for x in open("2015/Day01.Input").read()]
+directions = [x for x in open("2015/Day 01/Input.txt").read()]
 level = 0
 item = 0
 result = -1
