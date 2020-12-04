@@ -17,6 +17,6 @@ def containRepeat(s): # xyx
 def isNice(s):
     return containPair(s) and containRepeat(s)
 
-strings = [x for x in open("2015/Day05.Input").read().splitlines()]
+strings = [x for x in open("2015/Day 05/Input.txt").read().splitlines()]
 niceList = [isNice(s) for s in strings]
 print(niceList.count(True))

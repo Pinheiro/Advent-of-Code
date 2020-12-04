@@ -7,7 +7,7 @@ class Wire:
         self.in2 = in2
         self.val = None
 
-book = [x.split() for x in open("2015/Day07.Input").read().splitlines()]
+book = [x.split() for x in open("2015/Day 07/Input.txt").read().splitlines()]
 wire = {}
 
 for instr in book:

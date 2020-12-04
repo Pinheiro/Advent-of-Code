@@ -22,7 +22,7 @@ class Deliver:
 s = Deliver() # Santa coordinates
 r = Deliver() # Robot coordinates
 
-directions = [x for x in open("2015/Day03.Input").read()]
+directions = [x for x in open("2015/Day 03/Input.txt").read()]
 houses = [] # x,y coordinates for each house receiving a present
 turn = True # (True) Santa turn; (False) Robot turn
 

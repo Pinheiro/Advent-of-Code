@@ -1,5 +1,5 @@
 import re
-lst = [re.split('-| |: ', x) for x in open("2020/Day02.Input").read().splitlines()]
+lst = [re.split('-| |: ', x) for x in open("2020/Day 02/Input.txt").read().splitlines()]
 result = 0
 for x in lst:
     if ((x[3].count(x[2]) >= int(x[0])) and ((x[3].count(x[2]) <= int(x[1])))):

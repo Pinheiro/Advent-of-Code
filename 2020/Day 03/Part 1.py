@@ -1,5 +1,5 @@
-grid = [[char for char in line] for line in open("2020/Day03.Input").read().splitlines()]
-map = [[char for char in line] for line in open("2020/Day03.Input").read().splitlines()]
+grid = [[char for char in line] for line in open("2020/Day 03/Input.txt").read().splitlines()]
+map = [[char for char in line] for line in open("2020/Day 03/Input.txt").read().splitlines()]
 
 x = 0
 y = 0

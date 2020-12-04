@@ -1,4 +1,4 @@
-lstNumbers = sorted([int(x) for x in open("2020/Day01.Input").readlines()])
+lstNumbers = sorted([int(x) for x in open("2020/Day 01/Input.txt").readlines()])
 maxIndex = len(lstNumbers)
 for i in range(maxIndex - 2):
     for j in range(i + 1, maxIndex - 1):

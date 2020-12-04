@@ -1,5 +1,5 @@
 import re
-instructions = [re.split(' |,', x) for x in open("2015/Day06.Input").read().splitlines()]
+instructions = [re.split(' |,', x) for x in open("2015/Day 06/Input.txt").read().splitlines()]
 lights = [[0 for columns in range(1000)] for rows in range(1000)]
 
 def processInstruction(i):
@@ -11,20 +11,22 @@ def processInstruction(i):
         # turn off
         for x in range(x0, x1):
             for y in range(y0, y1):
-                if (lights[x][y] > 0):
-                    lights[x][y] -= 1
+                lights[x][y] = 0
     elif (i[0] == 'turnon'):
         # turn on
         for x in range(x0, x1):
             for y in range(y0, y1):
-                lights[x][y] += 1
+                lights[x][y] = 1
     else:
         # toggle
         for x in range(x0, x1):
             for y in range(y0, y1):
-                lights[x][y] += 2
+                if (lights[x][y] == 0):
+                    lights[x][y] = 1
+                else:
+                    lights[x][y] = 0
 
 for i in instructions:
     processInstruction(i)
 
-print(sum([sum(row) for row in lights]))
+print(sum([row.count(1) for row in lights]))

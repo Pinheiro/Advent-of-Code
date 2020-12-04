@@ -8,7 +8,7 @@ def isNice(s):
     forbidden = s.count('ab') + s.count('cd') + s.count('pq') + s.count('xy')
     return (vowels >= 3) and (twice) and (forbidden == 0)
 
-strings = [x for x in open("2015/Day05.Input").read().splitlines()]
+strings = [x for x in open("2015/Day 05/Input.txt").read().splitlines()]
 nice = 0
 for s in strings:
     if isNice(s):
