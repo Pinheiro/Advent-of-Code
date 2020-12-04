@@ -1,4 +1,4 @@
-dimensionsStrings = [x.split('x') for x in open("2015/Day02.Input").read().splitlines()]
+dimensionsStrings = [x.split('x') for x in open("2015/Day 02/Input.txt").read().splitlines()]
 total = []
 for dStr in dimensionsStrings:
     dInt = [int(x) for x in dStr]
